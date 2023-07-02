@@ -15,6 +15,7 @@ Sistem Inventarisasi Barang Berbasis Web dengan CodeIgniter dan Bootstrap.
 - DaftarPeminjaman
 - Daftar Pengembalian
 - Daftar Retur
+- Daftar Disposal
 - Profil Akun
 - Konfigurasi Web
 
@@ -32,7 +33,7 @@ Sistem Inventarisasi Barang Berbasis Web dengan CodeIgniter dan Bootstrap.
 - Expor PDF
 
 ### Dukungan:
-- XAMPP 3.3.0
+- XAMPP 7.4.33 - Latest
 ##### atau
 - PHP 5.6 - 7.4
 - MySQL
