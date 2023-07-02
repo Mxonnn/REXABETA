@@ -33,15 +33,50 @@ Sistem Inventarisasi Barang Berbasis Web dengan CodeIgniter dan Bootstrap.
 - Expor PDF
 
 ### Dukungan:
-- XAMPP 7.4.33 - Latest
+- XAMPP 5.6.3 - Latest
 ##### atau
 - PHP 5.6 - 7.4
 - MySQL
 - PostgreSQL (Coming Soon)
 
-## Screenshot
-#### Halaman Dashboard
-![Dashboard](https://github.com/YuukioFuyu/Inventaris-Barang/assets/79379934/0ce07323-67fb-4572-833c-45ed8c2721ac)
+## Preview:
+#### Manajemen Barang
+Lebih mudah melakukan inventarisasi barang dengan fitur Bulk, sekaligus membuat Laporan Excel dan PDF secara otomatis dengan Fitur Export.
+![Sistem Inventaris - Brave 03_07_2023 00_06_32](https://github.com/YuukioFuyu/Inventaris-Barang/assets/79379934/95f85eb7-021a-41ed-bcc3-3f158b0a713b)
+
+#### Multi Akun
+Bergerak dalam Organisasi besar? Buat akun untuk semua orang, mendukung kustomisasi profil.
+![Sistem Inventaris - Brave 03_07_2023 00_07_02](https://github.com/YuukioFuyu/Inventaris-Barang/assets/79379934/08f0d9a7-026a-4027-9f84-52251059b9c0)
+
+#### Managerial Roles
+Buat dan tambahkan hak akses untuk setiap pengguna lebih mudah dan cepat.
+![Sistem Inventaris - Brave 03_07_2023 00_22_37](https://github.com/YuukioFuyu/Inventaris-Barang/assets/79379934/e6dcc9f3-2f85-4603-abf4-3fe9112967c9)
+
+#### Kustomisasi Hak Akses
+Lakukan penambahan dan pembatasan hak akses untuk setiap roles secara fleksibel.
+![Sistem Inventaris - Brave 03_07_2023 00_09_39](https://github.com/YuukioFuyu/Inventaris-Barang/assets/79379934/985a65fd-e42b-490d-a648-f491bede45b8)
+
+#### Kustomisasi Aplikasi
+Aplikasi web modular yang dapat dengan mudah disesuaikan untuk segala kebutuhan.
+![Sistem Inventaris - Brave 03_07_2023 00_09_53](https://github.com/YuukioFuyu/Inventaris-Barang/assets/79379934/9e590657-3caa-4fd9-81de-769652423a5d)
+
+<hr>
+
+### Default Login:
+#### Administrator
+| Username | Password |
+|  ------- | -------- |
+|   admin  |   admin  |
+
+#### Staff
+| Username | Password |
+|  ------- | -------- |
+|   staff  |   staff  |
+
+#### Guest
+| Username | Password |
+|  ------- | -------- |
+|   guest  |   guest  |
 
 <hr>
 
