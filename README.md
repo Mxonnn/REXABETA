@@ -45,6 +45,11 @@ Sistem Inventarisasi Barang Berbasis Web dengan CodeIgniter dan Bootstrap.
 <hr>
 
 ## ChangeLog:
+#### Versi 2.3
+- Added Feature **Disposal (Penghapusan Asset)**
+- Reconfigure MySQL Database 
+- Bug Fixed on MySQL Database Trigger Function
+
 #### Versi 2.2
 - Added Responsive Icons and Links
 - Improve UI Appearance
