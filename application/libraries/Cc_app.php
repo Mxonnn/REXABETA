@@ -253,7 +253,7 @@ class Cc_App
 	 * @param 		Mixed String | Object $action
 	 * @return		String
 	 */
-	public function onRoute($route = null, $method = 'get', $action)
+	public function onRoute($action, $route = null, $method = 'get')
 	{
 		if ($this->thisRoute($this->routePrefix .$route, $method, $action)) {
 			$this->routePrefix = $route;
