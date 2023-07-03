@@ -2468,13 +2468,13 @@ class Aauth {
 		return $content;
 	}
 
-	public function update_user_totp_secret($user_id = FALSE, $secret) {
-
-		if ($user_id == FALSE)
+	public function update_user_totp_secret($secret, $user_id = FALSE) {
+		if ($user_id === FALSE) {
 			$user_id = $this->CI->session->userdata('id');
-
+		}
+	
 		$data['totp_secret'] = $secret;
-
+	
 		$this->aauth_db->where('id', $user_id);
 		return $this->aauth_db->update($this->config_vars['users'], $data);
 	}
