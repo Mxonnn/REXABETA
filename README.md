@@ -33,10 +33,10 @@ Sistem Inventarisasi Barang Berbasis Web dengan CodeIgniter dan Bootstrap.
 - Expor PDF
 
 ### Dukungan:
-- XAMPP 5.6.3 - Latest
+- XAMPP 5.6.3 - 8.1.17
 ##### atau
-- PHP 5.6 - 7.4
-- MySQL
+- PHP 5.6 - 8.1
+- MySQL atau MariaDB
 - PostgreSQL (Coming Soon)
 
 ## Preview:
@@ -81,6 +81,13 @@ Aplikasi web modular yang dapat dengan mudah disesuaikan untuk segala kebutuhan.
 <hr>
 
 ## ChangeLog:
+#### Versi 2.4
+- Bug Fixes on Security Issues
+- Minor Bug Fix in Menu Akun
+- Deleting Role Selector on User Account Profile Menu
+- Changes Sub-Menu from [Role] to [Group]
+- Minor Changes to the Database
+
 #### Versi 2.3
 - Added Feature **Disposal (Penghapusan Asset)**
 - Reconfigure MySQL Database 
