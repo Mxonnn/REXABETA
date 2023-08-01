@@ -22,12 +22,12 @@ jQuery(document).ready(domo);
 <!-- Content Header (Page header) -->
 <section class="content-header">
    <h1>
-      Role
-      <small>Detail Role</small>
+      Group
+      <small>Detail Group</small>
    </h1>
    <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class=""><a  href="<?= site_url('administrator/group'); ?>">Role</a></li>
+      <li class=""><a  href="<?= site_url('administrator/group'); ?>">Group</a></li>
       <li class="active">Detail</li>
    </ol>
 </section>
@@ -48,8 +48,8 @@ jQuery(document).ready(domo);
                         <img class="img-circle" src="<?= BASE_ASSET; ?>/img/view.png" alt="User Avatar">
                      </div>
                      <!-- /.widget-user-image -->
-                     <h3 class="widget-user-username">Role</h3>
-                     <h5 class="widget-user-desc">Detail Role</h5>
+                     <h3 class="widget-user-username">Group</h3>
+                     <h5 class="widget-user-desc">Detail Group</h5>
                      <hr>
                   </div>
 
@@ -86,7 +86,7 @@ jQuery(document).ready(domo);
                     <br>
 
                     <div class="view-nav">
-                        <a class="btn btn-flat btn-info btn_edit btn_action" id="btn_edit" data-stype='back' title="Edit Role (Ctrl+E)" href="<?= site_url('administrator/group/edit/'.$group->id); ?>"><i class="fa fa-edit" ></i> Edit Role</a>
+                        <a class="btn btn-flat btn-info btn_edit btn_action" id="btn_edit" data-stype='back' title="Edit Group (Ctrl+E)" href="<?= site_url('administrator/group/edit/'.$group->id); ?>"><i class="fa fa-edit" ></i> Edit Group</a>
                         <a class="btn btn-flat btn-default btn_action" id="btn_back" title="Kembali (Ctrl+X)" href="<?= site_url('administrator/group/'); ?>"><i class="fa fa-undo" ></i> Kembali ke Daftar</a>
                      </div>
                     
