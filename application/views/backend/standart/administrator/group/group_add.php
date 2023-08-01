@@ -34,12 +34,12 @@ jQuery(document).ready(domo);
 <!-- Content Header (Page header) -->
 <section class="content-header">
    <h1>
-      Role
-      <small>Role Baru</small>
+      Group
+      <small>Group Baru</small>
    </h1>
    <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class=""><a  href="<?= site_url('administrator/group'); ?>">Role</a></li>
+      <li class=""><a  href="<?= site_url('administrator/group'); ?>">Group</a></li>
       <li class="active">Baru</li>
    </ol>
 </section>
@@ -60,8 +60,8 @@ jQuery(document).ready(domo);
                         <img class="img-circle" src="<?= BASE_ASSET; ?>/img/add2.png" alt="Group Avatar">
                      </div>
                      <!-- /.widget-group-image -->
-                     <h3 class="widget-user-username">Role</h3>
-                     <h5 class="widget-user-desc">Role Baru</h5>
+                     <h3 class="widget-user-username">Group</h3>
+                     <h5 class="widget-user-desc">Group Baru</h5>
                      <hr>
                   </div>
 
@@ -77,7 +77,7 @@ jQuery(document).ready(domo);
                         <label for="name" class="col-sm-2 control-label">Nama <i class="required">*</i></label>
                         <div class="col-sm-8">
                            <input type="text" class="form-control" name="name" id="name" placeholder="Nama" value="<?= set_value('name'); ?>">
-                           <small class="info help-block">Masukkan Nama Role!</small>
+                           <small class="info help-block">Masukkan Nama Group!</small>
                         </div>
                      </div>
 
@@ -85,7 +85,7 @@ jQuery(document).ready(domo);
                         <label for="definition" class="col-sm-2 control-label">Keterangan </label>
                         <div class="col-sm-8">
                            <input type="text" class="form-control" name="definition" id="definition" placeholder="Keterangan" value="<?= set_value('definition'); ?>">
-                           <small class="info help-block">Masukkan Keterangan Role!</small>
+                           <small class="info help-block">Masukkan Keterangan Group!</small>
                         </div>
                      </div>
                     <div class="message">
@@ -127,8 +127,8 @@ jQuery(document).ready(domo);
 
       $('#btn_cancel').click(function() {
           swal({
-                  title: "Batalkan pembuatan role?",
-                  text: "Data role yang sudah dibuat, akan terbuang sia-sia.",
+                  title: "Batalkan pembuatan group?",
+                  text: "Data group yang sudah dibuat, akan terbuang sia-sia.",
                   type: "warning",
                   showCancelButton: true,
                   confirmButtonColor: "#DD6B55",
