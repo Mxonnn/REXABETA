@@ -33,12 +33,12 @@ jQuery(document).ready(domo);
 <!-- Content Header (Page header) -->
 <section class="content-header">
    <h1>
-      Roles
+      Group
       <small>Daftar Semua</small>
    </h1>
    <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Roles</li>
+      <li class="active">Group</li>
    </ol>
 </section>
 <!-- Main content -->
@@ -54,22 +54,22 @@ jQuery(document).ready(domo);
                   <div class="widget-user-header ">
                      <div class="row pull-right">
                         <?php is_allowed('group_add', function(){?>
-                        <a class="btn btn-flat btn-success btn_add_new" id="btn_add_new" title="Tambah Role Baru (Ctrl+A)" href="<?= site_url('administrator/group/add'); ?>"><i class="fa fa-plus-square-o" ></i> Tambah Role Baru</a>
+                        <a class="btn btn-flat btn-success btn_add_new" id="btn_add_new" title="Tambah Group Baru (Ctrl+A)" href="<?= site_url('administrator/group/add'); ?>"><i class="fa fa-plus-square-o" ></i> Tambah Group Baru</a>
                         <?php }) ?>
                         <?php is_allowed('group_export', function(){?>
-                        <a class="btn btn-flat btn-success" title="Export roles dalam format XLS" href="<?= site_url('administrator/group/export'); ?>"><i class="fa fa-file-excel-o" ></i> Export XLS</a>
+                        <a class="btn btn-flat btn-success" title="Export group dalam format XLS" href="<?= site_url('administrator/group/export'); ?>"><i class="fa fa-file-excel-o" ></i> Export XLS</a>
                         <?php }) ?>
                         <?php is_allowed('group_export', function(){?>
-                        <a class="btn btn-flat btn-success" title="Export roles dalam format PDF" href="<?= site_url('administrator/group/export_pdf'); ?>"><i class="fa fa-file-pdf-o" ></i> Export PDF</a>
+                        <a class="btn btn-flat btn-success" title="Export group dalam format PDF" href="<?= site_url('administrator/group/export_pdf'); ?>"><i class="fa fa-file-pdf-o" ></i> Export PDF</a>
                         <?php }) ?>
                      </div>
                      <div class="widget-user-image">
                         <img class="img-circle" src="<?= BASE_ASSET; ?>/img/list.png" alt="User Avatar">
                      </div>
                      <!-- /.widget-user-image -->
-                     <h3 class="widget-user-username">Roles</h3>
-                     <h5 class="widget-user-desc">Daftar Semua Roles</h5>
-                     <h5 class="widget-user-desc">Total : <i class="label bg-blue"><?= $group_counts; ?>  Roles</i></h5>
+                     <h3 class="widget-user-username">Group</h3>
+                     <h5 class="widget-user-desc">Daftar Semua Group</h5>
+                     <h5 class="widget-user-desc">Total : <i class="label bg-blue"><?= $group_counts; ?>  Group</i></h5>
                   </div>
 
                   <form name="form_group" id="form_group" action="<?= base_url('administrator/group/index'); ?>">
@@ -115,7 +115,7 @@ jQuery(document).ready(domo);
                       <?php if ($group_counts == 0) :?>
                          <tr>
                            <td colspan="100">
-                           Data roles tidak tersedia :(
+                           Data group tidak tersedia :(
                            </td>
                          </tr>
                       <?php endif; ?>
@@ -190,8 +190,8 @@ jQuery(document).ready(domo);
         var url = $(this).attr('data-href');
 
         swal({
-                title: "Hapus role ini?",
-                text: "Role yang sudah dihapus, tidak dapat dikembalikan lagi!",
+                title: "Hapus group ini?",
+                text: "Group yang sudah dihapus, tidak dapat dikembalikan lagi!",
                 type: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
@@ -217,8 +217,8 @@ jQuery(document).ready(domo);
 
         if (bulk.val() == 'delete') {
             swal({
-                    title: "Hapus role yang dipilih?",
-                    text: "Role yang sudah dihapus, tidak dapat dikembalikan lagi!",
+                    title: "Hapus group yang dipilih?",
+                    text: "Group yang sudah dihapus, tidak dapat dikembalikan lagi!",
                     type: "warning",
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
