@@ -33,12 +33,12 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
    <h1>
-      Role
-      <small>Edit Role</small>
+      Group
+      <small>Edit Group</small>
    </h1>
    <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class=""><a  href="<?= site_url('administrator/group'); ?>">Role</a></li>
+      <li class=""><a  href="<?= site_url('administrator/group'); ?>">Group</a></li>
       <li class="active">Edit</li>
    </ol>
 </section>
@@ -56,8 +56,8 @@
                         <img class="img-circle" src="<?= BASE_ASSET; ?>/img/add2.png" alt="User Avatar">
                      </div>
                      <!-- /.widget-user-image -->
-                     <h3 class="widget-user-username">Role</h3>
-                     <h5 class="widget-user-desc">Edit Role</h5>
+                     <h3 class="widget-user-username">Group</h3>
+                     <h5 class="widget-user-desc">Edit Group</h5>
                      <hr>
                   </div>
                   <?= form_open(base_url('administrator/group/edit_save/'.$this->uri->segment(4)), [
@@ -72,14 +72,14 @@
                         <label for="name" class="col-sm-2 control-label">Nama <i class="required">*</i></label>
                         <div class="col-sm-8">
                            <input type="text" class="form-control" name="name" id="name" placeholder="Nama" value="<?= set_value('name', $group->name); ?>">
-                           <small class="info help-block">Masukkan Nama Role!</small>
+                           <small class="info help-block">Masukkan Nama Group!</small>
                         </div>
                      </div>
                       <div class="form-group ">
                         <label for="definition" class="col-sm-2 control-label">Keterangan</label>
                         <div class="col-sm-8">
                            <input type="text" class="form-control" name="definition" id="definition" placeholder="Keterangan" value="<?= set_value('definition', $group->definition); ?>">
-                           <small class="info help-block">Masukkan Keterangan Role!</small>
+                           <small class="info help-block">Masukkan Keterangan Group!</small>
                         </div>
                      </div>
                      <div class="message">
@@ -107,8 +107,8 @@
    $(document).ready(function() {
      $('#btn_cancel').click(function() {
          swal({
-                 title: "Batalkan edit role?",
-                 text: "Data role yang akan diubah, akan tereset kembali.",
+                 title: "Batalkan edit group?",
+                 text: "Data group yang akan diubah, akan tereset kembali.",
                  type: "warning",
                  showCancelButton: true,
                  confirmButtonColor: "#DD6B55",
