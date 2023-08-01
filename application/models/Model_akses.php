@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-class Model_access extends MY_Model {
+class Model_akses extends MY_Model {
 
 	private $primary_key 	= 'perm_id';
 	private $table_name 	= 'aauth_perm_to_group';
@@ -81,5 +81,5 @@ class Model_access extends MY_Model {
 
 }
 
-/* End of file Model_access.php */
-/* Location: ./application/models/Model_access.php */
+/* End of file Model_akses.php */
+/* Location: ./application/models/Model_akses.php */
