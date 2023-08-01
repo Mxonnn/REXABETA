@@ -23,7 +23,7 @@ Sistem Inventarisasi Barang Berbasis Web dengan CodeIgniter dan Bootstrap.
 - Upload Gambar
 - Rich Text Editor
 - Multi Akun
-- Roles Permission
+- Group Permission
 - Custom Permission
 - Konfigurasi Dinamis
 - Pencarian Data
