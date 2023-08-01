@@ -93,21 +93,6 @@
                           <small class="info help-block">Masukkan nama lengkap kamu!</small>
                         </div>
                     </div>
-                    <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Roles <i class="required">*</i></label>
-
-                        <div class="col-sm-8">
-                           <select  class="form-control chosen-select" name="group[]" id="group" multiple data-placeholder="Pilih Roles">
-                            <option value=""></option>
-                            <?php foreach (db_get_all_data('aauth_groups') as $row): ?>
-                            <option <?= array_search($row->id, $group_user) !== false? 'selected="selected"' : ''; ?> value="<?= $row->id; ?>"  ><?= ucwords($row->name); ?></option>
-                            <?php endforeach; ?>  
-                           </select>
-                            <small class="info help-block">
-                             Pilih salah satu atau lebih.
-                          </small>
-                        </div>
-                    </div>
 
                     <div class="form-group ">
                         <label for="username" class="col-sm-2 control-label">Foto Profil </label>
