@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 *| access site
 *|
 */
-class Access extends Admin	
+class Akses extends Admin	
 {
 	
 	public function __construct()
@@ -17,7 +17,7 @@ class Access extends Admin
 		parent::__construct();
 
 		$this->load->model([
-			'model_access',
+			'model_akses',
 			'model_group'
 		]);
 	}
@@ -29,12 +29,12 @@ class Access extends Admin
 	*/
 	public function index($offset = 0)
 	{
-		$this->is_allowed('access_list');
+		$this->is_allowed('akses_list');
 
 		$this->data['groups'] = $this->model_group->find_all();
 
-		$this->template->title('Access List');
-		$this->render('backend/standart/administrator/access/access_list', $this->data);
+		$this->template->title('Akses List');
+		$this->render('backend/standart/administrator/akses/akses_list', $this->data);
 	}
 
 	/**
@@ -44,7 +44,7 @@ class Access extends Admin
 	*/
 	public function save()
 	{
-		if (!$this->is_allowed('access_update', false)) {
+		if (!$this->is_allowed('akses_update', false)) {
 			return $this->response([
 				'success' => false,
 				'message' => 'Maaf, Anda tidak memiliki izin untuk mengakses'
@@ -63,12 +63,12 @@ class Access extends Admin
 					'group_id' => $group_id,
 				];
 			}
-			$save_access = $this->db->insert_batch('aauth_perm_to_group', $data);
+			$save_akses = $this->db->insert_batch('aauth_perm_to_group', $data);
 		} else {
-			$save_access = true;
+			$save_akses = true;
 		}
 
-		if ($save_access) {
+		if ($save_akses) {
 			$this->data = [
 				'success' => true,
 				'message' => 'Data telah berhasil diperbarui. ',
@@ -88,9 +88,9 @@ class Access extends Admin
 	*
 	* @var String $group_id 
 	*/
-	public function get_access_group($group_id)
+	public function get_akses_group($group_id)
 	{
-		if (!$this->is_allowed('access_list', false)) {
+		if (!$this->is_allowed('akses_list', false)) {
 			echo '<center>Maaf, Anda tidak memiliki izin untuk mengakses</center>';
 			exit;
 		}
@@ -111,7 +111,7 @@ class Access extends Admin
 		foreach($group_perms_groupping as $group_name => $childs) { ?>
 			
 			<li>
-				<label class="text-green toggle-select-all-access" title="click to toggle check group" data-target=".<?= $group_name; ?>"><b><?= ucwords($group_name); ?></b></label>
+				<label class="text-green toggle-select-all-akses" title="click to toggle check group" data-target=".<?= $group_name; ?>"><b><?= ucwords($group_name); ?></b></label>
 			</li>
 			<?php foreach($childs as $perms) { ?>
 			<li>
@@ -126,5 +126,5 @@ class Access extends Admin
 }
 
 
-/* End of file Access.php */
-/* Location: ./application/controllers/administrator/Access.php */
+/* End of file Akses.php */
+/* Location: ./application/controllers/administrator/Akses.php */
