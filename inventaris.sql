@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2023 at 01:17 PM
+-- Generation Time: Aug 01, 2023 at 09:11 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -92,7 +92,7 @@ INSERT INTO `aauth_perms` (`id`, `name`, `definition`) VALUES
 (7, 'menu_auth', NULL),
 (8, 'menu_user', NULL),
 (9, 'menu_group', NULL),
-(10, 'menu_access', NULL),
+(10, 'menu_akses', NULL),
 (11, 'menu_permission', NULL),
 (12, 'menu_api_documentation', NULL),
 (13, 'menu_web_documentation', NULL),
@@ -144,9 +144,9 @@ INSERT INTO `aauth_perms` (`id`, `name`, `definition`) VALUES
 (59, 'permission_update', NULL),
 (60, 'permission_view', NULL),
 (61, 'permission_delete', NULL),
-(62, 'access_list', NULL),
-(63, 'access_add', NULL),
-(64, 'access_update', NULL),
+(62, 'akses_list', NULL),
+(63, 'akses_add', NULL),
+(64, 'akses_update', NULL),
 (65, 'menu_list', NULL),
 (66, 'menu_add', NULL),
 (67, 'menu_update', NULL),
@@ -553,6 +553,10 @@ INSERT INTO `aauth_perm_to_group` (`perm_id`, `group_id`) VALUES
 (253, 2),
 (274, 2),
 (275, 2),
+(19, 2),
+(20, 2),
+(21, 2),
+(22, 2),
 (132, 2),
 (133, 2),
 (134, 2),
@@ -563,21 +567,12 @@ INSERT INTO `aauth_perm_to_group` (`perm_id`, `group_id`) VALUES
 (47, 2),
 (48, 2),
 (49, 2),
-(50, 2),
-(51, 2),
-(52, 2),
-(53, 2),
-(54, 2),
-(55, 2),
 (56, 2),
 (57, 2),
 (58, 2),
 (59, 2),
 (60, 2),
 (61, 2),
-(62, 2),
-(63, 2),
-(64, 2),
 (71, 2),
 (72, 2),
 (73, 2),
@@ -691,7 +686,7 @@ CREATE TABLE `aauth_users` (
 --
 
 INSERT INTO `aauth_users` (`id`, `email`, `pass`, `username`, `full_name`, `avatar`, `banned`, `last_login`, `last_activity`, `date_created`, `forgot_exp`, `remember_time`, `remember_exp`, `verification_code`, `top_secret`, `ip_address`) VALUES
-(1, '', '3783a5063e48003fd64eb62d2f06125430b4d63e62aeda455564932654079c80', 'admin', 'Administrator', '', 0, '2023-06-22 06:52:40', '2023-06-22 06:52:40', '2022-09-08 00:00:00', NULL, '2022-09-08 00:00:00', '6egq9NoGxYKnb21w', NULL, NULL, '127.0.0.1'),
+(1, '', '3783a5063e48003fd64eb62d2f06125430b4d63e62aeda455564932654079c80', 'admin', 'Administrator', '', 0, '2022-09-08 00:00:00', '2022-09-08 00:00:00', '2022-09-08 00:00:00', NULL, '2022-09-08 00:00:00', '6egq9NoGxYKnb21w', NULL, NULL, '::1'),
 (2, '', '966184da7770dec434b72a7e46f70fea2a226edbd8a6f4e843bcfe1fd366f804', 'staff', 'Staff', '', 0, '2022-09-08 00:00:00', '2022-09-08 00:00:00', '2022-09-08 00:00:00', NULL, '2022-09-08 00:00:00', '', NULL, NULL, '::1'),
 (3, '', '80122e8b1bf742d2f44cd20e3e4b1e71e43984b87c74bec68ec227c9103d41e5', 'guest', 'Guest', '', 0, '2022-09-08 00:00:00', '2022-09-08 00:00:00', '2022-09-08 00:00:00', NULL, '2022-09-08 00:00:00', '', NULL, NULL, '::1');
 
@@ -1776,8 +1771,8 @@ INSERT INTO `menu` (`id`, `label`, `type`, `icon_color`, `link`, `sort`, `parent
 (3, 'Informasi', 'menu', '', 'administrator/informasi', 100, 0, 'fa-info', 1),
 (8, 'Akun', 'menu', 'default', '#', 31, 0, 'fa-user', 1),
 (9, 'Pengguna', 'menu', '', 'administrator/user', 32, 8, '', 1),
-(10, 'Roles', 'menu', '', 'administrator/group', 33, 8, '', 1),
-(11, 'Akses', 'menu', '', 'administrator/access', 34, 8, '', 1),
+(10, 'Group', 'menu', '', 'administrator/group', 33, 8, '', 1),
+(11, 'Akses', 'menu', '', 'administrator/akses', 34, 8, '', 1),
 (14, 'Kofigurasi', 'menu', 'default', '#', 35, 0, 'fa-cogs', 1),
 (15, 'Pengaturan', 'menu', 'text-red', 'administrator/setting', 36, 14, 'fa-circle-o', 1),
 (18, 'Home', 'menu', 'default', '/', 1, 0, '', 2),
@@ -4877,7 +4872,7 @@ ALTER TABLE `aauth_groups`
 -- AUTO_INCREMENT for table `aauth_login_attempts`
 --
 ALTER TABLE `aauth_login_attempts`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
 
 --
 -- AUTO_INCREMENT for table `aauth_perms`
