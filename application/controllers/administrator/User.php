@@ -69,7 +69,7 @@ class User extends Admin
 		if (!$this->is_allowed('user_add', false)) {
 			return $this->response([
 				'success' => false,
-				'message' => 'Sorry you do not have permission to access'
+				'message' => 'Maaf, Anda tidak memiliki izin untuk mengakses'
 				]);
 		}
 
@@ -161,7 +161,7 @@ class User extends Admin
 		if (!$this->is_allowed('user_update', false)) {
 			return $this->response([
 				'success' => false,
-				'message' => 'Sorry you do not have permission to access'
+				'message' => 'Maaf, Anda tidak memiliki izin untuk mengakses'
 				]);
 		}
 
@@ -320,7 +320,7 @@ class User extends Admin
 		if (!$this->is_allowed('user_update_profile', false)) {
 			return $this->response([
 				'success' => false,
-				'message' => 'Sorry you do not have permission to access'
+				'message' => 'Maaf, Anda tidak memiliki izin untuk mengakses'
 				]);
 		}
 
@@ -415,7 +415,7 @@ class User extends Admin
 		if (!$this->is_allowed('user_add', false)) {
 			return $this->response([
 				'success' => false,
-				'message' => 'Sorry you do not have permission to access'
+				'message' => 'Maaf, Anda tidak memiliki izin untuk mengakses'
 				]);
 		}
 
@@ -462,7 +462,7 @@ class User extends Admin
 		if (!$this->is_allowed('user_delete', false)) {
 			return $this->response([
 				'success' => false,
-				'message' => 'Sorry you do not have permission to access'
+				'message' => 'Maaf, Anda tidak memiliki izin untuk mengakses'
 				]);
 		}
 
@@ -519,7 +519,7 @@ class User extends Admin
 		if (!$this->is_allowed('user_update', false)) {
 			return $this->response([
 				'success' => false,
-				'message' => 'Sorry you do not have permission to access'
+				'message' => 'Maaf, Anda tidak memiliki izin untuk mengakses'
 				]);
 		}
 		$this->load->helper('file');
@@ -559,7 +559,7 @@ class User extends Admin
 		if (!$this->is_allowed('user_update_status', false)) {
 			return $this->response([
 				'success' => false,
-				'message' => 'Sorry you do not have permission to access'
+				'message' => 'Maaf, Anda tidak memiliki izin untuk mengakses'
 				]);
 		}
 		$status = $this->input->post('status');
